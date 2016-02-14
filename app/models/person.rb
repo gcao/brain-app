@@ -3,7 +3,12 @@ class Person
   field :first_name, type: String
   field :last_name, type: String
   field :job_title, type: String
+  field :username, type: String
   field :email, type: String
   field :phone_no, type: String
   field :hipchat_account, type: String
+
+  def name
+    "#{first_name} #{last_name}"
+  end
 end
