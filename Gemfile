@@ -4,6 +4,8 @@ ruby "2.2.3"
 
 gem 'rails', github: "rails/rails"
 
+gem 'active_model_serializers'
+
 gem 'mongoid', git: 'https://github.com/estolfo/mongoid.git', branch: 'MONGOID-4218-rails-5'
 
 # Use sqlite3 as the database for Active Record

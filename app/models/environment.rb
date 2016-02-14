@@ -8,4 +8,9 @@ class Environment
   field :postgres_server, type: String
   field :requires_ssl, type: Boolean
   field :role, type: String
+
+  def postgres_server
+    server = self["postgres_server"]
+    server.to_s.empty? ? hdap_server : server
+  end
 end
