@@ -4,4 +4,12 @@ class ProjectSerializer < ActiveModel::Serializer
   def id
     object.id.to_s
   end
+
+  def team
+    _team = object.team
+    {
+      id: _team.id.to_s,
+      name: _team.name,
+    }
+  end
 end
