@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 73fb2977cab8cd9b8ed7bb61df3072e2ca74b3ce
+  revision: e40518f5d44303ed91641b342a53bdfb32753de3
   specs:
     actioncable (5.0.0.beta2)
       actionpack (= 5.0.0.beta2)
@@ -60,10 +60,10 @@ GIT
 
 GIT
   remote: https://github.com/estolfo/mongoid.git
-  revision: f191dec19d701faf088995421d4a9f32f4ea49ba
+  revision: ac6d2be8509c70503c0ca42a737a7f7775041d54
   branch: MONGOID-4218-rails-5
   specs:
-    mongoid (5.1.0)
+    mongoid (6.0.0)
       activemodel (= 5.0.0.beta2)
       mongo (~> 2.1)
       tzinfo (>= 0.3.37)
@@ -74,7 +74,7 @@ GEM
     active_model_serializers (0.9.4)
       activemodel (>= 3.2)
     arel (7.0.0)
-    bson (4.0.1)
+    bson (4.0.2)
     builder (3.2.2)
     byebug (8.2.2)
     concurrent-ruby (1.0.0)
@@ -100,10 +100,10 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
-    mime-types (2.99)
+    mime-types (2.99.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
-    mongo (2.2.2)
+    mongo (2.2.3)
       bson (~> 4.0)
     nio4r (1.2.1)
     nokogiri (1.6.7.2)
@@ -148,7 +148,7 @@ GEM
     sprockets (3.5.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.0.1)
+    sprockets-rails (3.0.2)
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
