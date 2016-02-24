@@ -10,5 +10,7 @@ export PROCESS=`ps aux | grep brain-app | grep -v grep | awk '{print $2}'`
 test -n "$PROCESS" && kill -9 $PROCESS
 
 export RAILS_ENV=production
-bundle exec puma -C config/puma.rb -d
+
+# https://wiki.jenkins-ci.org/display/JENKINS/ProcessTreeKiller
+BUILD_ID=dontKillMe bundle exec puma -C config/puma.rb -d
 
