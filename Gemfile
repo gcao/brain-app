@@ -8,6 +8,8 @@ gem 'active_model_serializers'
 
 gem 'mongoid', git: 'https://github.com/estolfo/mongoid.git', branch: 'MONGOID-4218-rails-5'
 
+gem 'rack-cors', :require => 'rack/cors'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
