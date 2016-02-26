@@ -7,6 +7,7 @@ class ProjectSerializer < ActiveModel::Serializer
 
   def team
     _team = object.team
+    return unless _team
     {
       id: _team.id.to_s,
       name: _team.name,
