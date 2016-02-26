@@ -2,6 +2,7 @@
 
 set -e
 
+source $HOME/.secrets
 source $HOME/.rvm/scripts/rvm
 rvm use 2.2.3
 bundle install
@@ -17,5 +18,5 @@ export PORT=8000
 # https://wiki.jenkins-ci.org/display/JENKINS/ProcessTreeKiller
 export BUILD_ID=dontKillMe
 
-nohup bundle exec puma -C config/puma.rb &
+bundle exec puma -C config/puma.rb -d
 
