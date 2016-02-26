@@ -26,8 +26,8 @@ Team.create!(
   name: 'HDAP UI',
   description: '',
   email_alias: 'HDAP_UI@vonage.com',
-  tech_lead: cao,
   projects: [ hdap_ui_project ],
+  members: [TeamMember.new(role: 'tech_lead', person: cao)]
 )
 
 Environment.create!(

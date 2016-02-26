@@ -8,6 +8,8 @@ class Person
   field :phone_no, type: String
   field :hipchat_account, type: String
 
+  has_many :teams, class_name: "TeamMember", inverse_of: "person"
+
   def name
     "#{first_name} #{last_name}"
   end
